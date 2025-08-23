@@ -62,6 +62,7 @@
                         'nome' => 'KAWAZAKI NINJA 300 2015',
                         'preco' => 'R$ 19.500,00',
                         'especificacoes' => array(
+                            'Kilometragem' => '17.000 km',
                             'Cilindrada' => '296 cc',
                             'Potência' => '39 cv',
                             'Transmissão' => '6 marchas',
@@ -73,6 +74,7 @@
                         'nome' => 'KAWAZAKI NINJA 300 2015',
                         'preco' => 'R$ 19.500,00',
                         'especificacoes' => array(
+                            'Kilometragem' => '17.000 km',
                             'Cilindrada' => '296 cc',
                             'Potência' => '39 cv',
                             'Transmissão' => '6 marchas',
@@ -84,6 +86,7 @@
                         'nome' => 'KAWAZAKI NINJA 300 2015',
                         'preco' => 'R$ 19.500,00',
                         'especificacoes' => array(
+                            'Kilometragem' => '17.000 km',
                             'Cilindrada' => '296 cc',
                             'Potência' => '39 cv',
                             'Transmissão' => '6 marchas',
