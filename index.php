@@ -11,7 +11,7 @@
 <body> <!-- Header -->
     <header>
         <div class="container">
-            <div class="header-content"> <a href="#" class="logo">Rafa<span>Motos</span></a>
+            <div class="header-content"> <a href="#" class="logo"><img src="img/logo.png" style="width: 100px;"></a>
                 <nav>
                     <ul>
                         <li><a href="#inicio">Início</a></li>
@@ -38,12 +38,12 @@
             <div class="sobre-content">
                 <div class="sobre-texto">
                     <h2>Sobre a Rafa Motos</h2>
-                    <p>Há mais de 10 anos no mercado, a Rafa Motos é referência em qualidade e confiança quando o assunto é motocicletas. Nossa missão é proporcionar aos clientes as melhores experiências sobre duas rodas, com produtos de alta qualidade e um atendimento personalizado.</p>
+                    <p>Há 2 anos no mercado, a Rafa Motos é referência em qualidade e confiança quando o assunto é motocicletas. Nossa missão é proporcionar aos clientes as melhores experiências sobre duas rodas, com produtos de alta qualidade e um atendimento personalizado.</p>
                     <p>Contamos com uma equipe especializada e apaixonada por motos, pronta para oferecer o melhor aconselhamento na escolha da moto ideal para cada perfil de piloto. Trabalhamos apenas com as melhores marcas e modelos, garantindo procedência e satisfação total.</p>
                     <p>Venha nos fazer uma visita e descubra por que somos a escolha certa para quem busca qualidade, confiança e preço justo no mundo das motos.</p>
                 </div>
                 <div class="sobre-imagem">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7c5668f2-b0eb-4ca2-9aad-ef01129b4e20.png" alt="Fachada da loja Rafa Motos com diversas motos em exposição" />
+                    <img src="img/sobre.jpg" />
                 </div>
             </div>
         </div>
@@ -58,83 +58,38 @@
                 // Matriz com as informações das motos
                 $motos = array(
                     array(
-                        'imagem' => 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1c408920-6f1b-4aca-b08a-193af77a4f14.png',
-                        'alt' => 'Honda CB 650R vermelha com detalhes em preto, estilo naked sport',
-                        'nome' => 'Honda CB 650R',
-                        'preco' => 'R$ 42.990,00',
-                        'descricao' => 'Moto naked sport com design agressivo e performance excepcional para o dia a dia e diversão nas estradas.',
+                        'imagem' => 'img/KAWAZAKI.jpg',
+                        'nome' => 'KAWAZAKI NINJA 300 2015',
+                        'preco' => 'R$ 19.500,00',
                         'especificacoes' => array(
-                            'Cilindrada' => '649cc',
-                            'Potência' => '95 cv',
+                            'Cilindrada' => '296 cc',
+                            'Potência' => '39 cv',
                             'Transmissão' => '6 marchas',
-                            'Peso' => '202 kg'
+                            'Peso' => '172 kg'
                         )
                     ),
                     array(
-                        'imagem' => 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/481e022c-b7f0-4220-b884-add0922a8e13.png',
-                        'alt' => 'Yamaha MT-09 preta com detalhes em azul, estilo hyper naked',
-                        'nome' => 'Yamaha MT-09',
-                        'preco' => 'R$ 56.800,00',
-                        'descricao' => 'Hyper naked com motor CP3 de 3 cilindros que oferece torque impressionante em baixas rotações.',
+                        'imagem' => 'img/KAWAZAKI.jpg',
+                        'nome' => 'KAWAZAKI NINJA 300 2015',
+                        'preco' => 'R$ 19.500,00',
                         'especificacoes' => array(
-                            'Cilindrada' => '890cc',
-                            'Potência' => '119 cv',
+                            'Cilindrada' => '296 cc',
+                            'Potência' => '39 cv',
                             'Transmissão' => '6 marchas',
-                            'Peso' => '189 kg'
+                            'Peso' => '172 kg'
                         )
                     ),
                     array(
-                        'imagem' => 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/94309f95-4210-4063-9bfd-de425c1b7946.png',
-                        'alt' => 'BMW R 1250 GS Adventure azul com alforges, estilo adventure tourer',
-                        'nome' => 'BMW R 1250 GS Adventure',
-                        'preco' => 'R$ 89.900,00',
-                        'descricao' => 'Aventureira premium com motor boxer de 1254cc, ideal para viagens longas e terrenos desafiadores.',
+                        'imagem' => 'img/KAWAZAKI.jpg',
+                        'nome' => 'KAWAZAKI NINJA 300 2015',
+                        'preco' => 'R$ 19.500,00',
                         'especificacoes' => array(
-                            'Cilindrada' => '1254cc',
-                            'Potência' => '136 cv',
+                            'Cilindrada' => '296 cc',
+                            'Potência' => '39 cv',
                             'Transmissão' => '6 marchas',
-                            'Peso' => '268 kg'
+                            'Peso' => '172 kg'
                         )
                     ),
-                    array(
-                        'imagem' => 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2e5b7b5f-5d3a-4d9e-9a4a-5c5b5a5a5a5a.png',
-                        'alt' => 'Kawasaki Ninja ZX-6R verde com detalhes em preto, estilo supersport',
-                        'nome' => 'Kawasaki Ninja ZX-6R',
-                        'preco' => 'R$ 68.500,00',
-                        'descricao' => 'Supersport de alta performance com aerodinâmica agressiva e tecnologia de ponta para pista e estrada.',
-                        'especificacoes' => array(
-                            'Cilindrada' => '636cc',
-                            'Potência' => '130 cv',
-                            'Transmissão' => '6 marchas',
-                            'Peso' => '196 kg'
-                        )
-                    ),
-                    array(
-                        'imagem' => 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3e5b7b5f-5d3a-4d9e-9a4a-5c5b5a5a5a5a.png',
-                        'alt' => 'Ducati Monster Plus vermelha com detalhes em preto, estilo naked',
-                        'nome' => 'Ducati Monster Plus',
-                        'preco' => 'R$ 52.900,00',
-                        'descricao' => 'Ícone italiano do segmento naked com design minimalista e desempenho esportivo característico da Ducati.',
-                        'especificacoes' => array(
-                            'Cilindrada' => '937cc',
-                            'Potência' => '111 cv',
-                            'Transmissão' => '6 marchas',
-                            'Peso' => '188 kg'
-                        )
-                    ),
-                    array(
-                        'imagem' => 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e5b7b5f-5d3a-4d9e-9a4a-5c5b5a5a5a5a.png',
-                        'alt' => 'Harley-Davidson Sportster S preta com detalhes cromados, estilo cruiser',
-                        'nome' => 'Harley-Davidson Sportster S',
-                        'preco' => 'R$ 75.800,00',
-                        'descricao' => 'Cruiser moderna com motor Revolution Max 1250T que combina tradição Harley com tecnologia contemporânea.',
-                        'especificacoes' => array(
-                            'Cilindrada' => '1252cc',
-                            'Potência' => '121 cv',
-                            'Transmissão' => '6 marchas',
-                            'Peso' => '228 kg'
-                        )
-                    )
                 );
 
                 // Loop através das motos para gerar os cards
@@ -143,12 +98,11 @@
                     echo '
                 <div class="produto-card">
                     <div class="produto-image">
-                        <img src="' . $moto['imagem'] . '" alt="' . $moto['alt'] . '" />
+                        <img src="' . $moto['imagem'] . '" />
                     </div>
                     <div class="produto-info">
                         <h3 class="produto-titulo">' . $moto['nome'] . '</h3>
                         <p class="produto-preco">' . $moto['preco'] . '</p>
-                        <p class="produto-descricao">' . $moto['descricao'] . '</p>
                         
                         <div class="produto-especificacoes">';
 
@@ -174,38 +128,24 @@
         </div>
     </section>
 
-    <!-- Destaque Especial -->
-    <section class="destaques">
-        <div class="container">
-            <div class="destaque-card">
-                <h2>Oferta Especial do Mês</h2>
-                <p>Financiamento em até 60x sem entrada</p>
-                <p>Taxas especiais para clientes Rafa Motos</p>
-                <a href="https://wa.me/554998112215?text=Boa%20tarde,%20gostaria%20de%20saber%20mais%20sobre%20o%20financiamento" class="btn btn-whatsapp" target="_blank">
-                    Solicitar Condições
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer id="contato">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Rafa Motos</h3>
-                    <p>Sua loja especializada em motos de alta qualidade.</p>
+                    <p>Sua loja especializada em motos de qualidade.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Contato</h3>
-                    <p>Email: contato@rafamotos.com.br</p>
-                    <p>Telefone: (49) 98112-2155</p>
-                    <p>Endereço: Rua das Motos, 123 - Sua Cidade</p>
+                    <p>Email: nickperetivendas@gmail.com</p>
+                    <p>Telefone: (49) 99811-2215</p>
+                    <p>Endereço: R. Bulcão Viana, 695 - Floresta, Videira - SC, 89560-051</p>
                 </div>
                 <div class="footer-section">
                     <h3>Horário de Funcionamento</h3>
-                    <p>Segunda a Sexta: 8h às 12h e 13:30h às 18:30h</p>
-                    <p>Sábado: 9h às 16h</p>
+                    <p>Segunda a Sexta: 8h às 12h 13:30h às 18:30h</p>
+                    <p>Sábado: 8h às 12h</p>
                     <p>Domingo: Fechado</p>
                 </div>
                 <div class="footer-section">
@@ -216,7 +156,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2024 Rafa Motos - Todos os direitos reservados</p>
+                <p>© 2024 Rafa Motos - Todos os direitos reservados | Criado por Nicolas Pereti</p>
             </div>
         </div>
     </footer>

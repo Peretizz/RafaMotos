@@ -13,11 +13,10 @@
 
         /* Cores principais */
         :root {
-            --azul-principal: #1e40af;
-            --azul-escuro: #1e3a8a;
-            --azul-claro: #3b82f6;
+            --azul-principal: #001046;
+            --azul-escuro: #001046;
             --branco: #ffffff;
-            --verde: #10b981;
+            --verde: #04865b;
             --cinza-claro: #f1f5f9;
         }
 
@@ -75,7 +74,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.8)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7c5668f2-b0eb-4ca2-9aad-ef01129b4e20.png') center/cover;
+            background: linear-gradient(rgba(1, 21, 83, 0.8), rgba(2, 21, 85, 0.8)), url('../img/fundo.jpg') center/cover;
             color: var(--branco);
             padding: 4rem 0;
             text-align: center;
@@ -188,7 +187,7 @@
         .produto-image {
             width: 100%;
             height: 250px;
-            background: var(--azul-claro);
+            background: var(--azul-escuro);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -257,7 +256,7 @@
         /* Destaques */
         .destaques {
             padding: 4rem 0;
-            background: linear-gradient(135deg, var(--azul-claro), var(--azul-principal));
+            background: linear-gradient(135deg, var(--azul-escuro), var(--azul-principal));
             color: var(--branco);
         }
 
