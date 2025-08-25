@@ -58,7 +58,12 @@
                 // Matriz com as informações das motos
                 $motos = array(
                     array(
-                        'imagem' => 'img/KAWAZAKI.jpg',
+                        'imagens' => array(
+                            'img/KAWAZAKI.jpg',
+                            'img/KAWAZAKI-2.jpg',
+                            'img/KAWAZAKI-3.jpg',
+                            'img/KAWAZAKI-4.jpg'
+                        ),
                         'nome' => 'KAWAZAKI NINJA 300 2015',
                         'preco' => 'R$ 19.500,00',
                         'especificacoes' => array(
@@ -70,38 +75,69 @@
                         )
                     ),
                     array(
-                        'imagem' => 'img/KAWAZAKI.jpg',
-                        'nome' => 'KAWAZAKI NINJA 300 2015',
-                        'preco' => 'R$ 19.500,00',
+                        'imagens' => array(
+                            'img/HONDA-CBR.jpg',
+                            'img/HONDA-CBR-2.jpg',
+                            'img/HONDA-CBR-3.jpg'
+                        ),
+                        'nome' => 'HONDA CBR 600RR 2018',
+                        'preco' => 'R$ 32.900,00',
                         'especificacoes' => array(
-                            'Kilometragem' => '17.000 km',
-                            'Cilindrada' => '296 cc',
-                            'Potência' => '39 cv',
+                            'Kilometragem' => '12.500 km',
+                            'Cilindrada' => '599 cc',
+                            'Potência' => '118 cv',
                             'Transmissão' => '6 marchas',
-                            'Peso' => '172 kg'
+                            'Peso' => '194 kg'
                         )
                     ),
                     array(
-                        'imagem' => 'img/KAWAZAKI.jpg',
-                        'nome' => 'KAWAZAKI NINJA 300 2015',
-                        'preco' => 'R$ 19.500,00',
+                        'imagens' => array(
+                            'img/YAMAHA-R3.jpg',
+                            'img/YAMAHA-R3-2.jpg',
+                            'img/YAMAHA-R3-3.jpg',
+                            'img/YAMAHA-R3-4.jpg',
+                            'img/YAMAHA-R3-5.jpg'
+                        ),
+                        'nome' => 'YAMAHA YZF-R3 2020',
+                        'preco' => 'R$ 24.800,00',
                         'especificacoes' => array(
-                            'Kilometragem' => '17.000 km',
-                            'Cilindrada' => '296 cc',
-                            'Potência' => '39 cv',
+                            'Kilometragem' => '8.200 km',
+                            'Cilindrada' => '321 cc',
+                            'Potência' => '42 cv',
                             'Transmissão' => '6 marchas',
-                            'Peso' => '172 kg'
+                            'Peso' => '169 kg'
                         )
                     ),
                 );
 
-                // Loop através das motos para gerar os cards
-                foreach ($motos as $moto) {
+                // Loop através das motos para gerar os cards com carrossel
+                foreach ($motos as $index => $moto) {
                     $whatsapp_link = "https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20" . urlencode($moto['nome']);
                     echo '
                 <div class="produto-card">
                     <div class="produto-image">
-                        <img src="' . $moto['imagem'] . '" />
+                        <div class="carousel-container" data-carousel="' . $index . '">
+                            <div class="carousel-track">';
+                    
+                    foreach ($moto['imagens'] as $imgIndex => $imagem) {
+                        $activeClass = $imgIndex === 0 ? ' active' : '';
+                        echo '<img src="' . $imagem . '" class="carousel-image' . $activeClass . '" alt="' . $moto['nome'] . '" />';
+                    }
+                    
+                    echo '
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(' . $index . ', -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(' . $index . ', 1)">›</button>
+                            <div class="carousel-indicators">';
+                    
+                    foreach ($moto['imagens'] as $imgIndex => $imagem) {
+                        $activeClass = $imgIndex === 0 ? ' active' : '';
+                        echo '<span class="indicator' . $activeClass . '" onclick="goToSlide(' . $index . ', ' . $imgIndex . ')"></span>';
+                    }
+                    
+                    echo '
+                            </div>
+                        </div>
                     </div>
                     <div class="produto-info">
                         <h3 class="produto-titulo">' . $moto['nome'] . '</h3>
@@ -191,7 +227,62 @@
                     card.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
                 });
             });
+
+            // Inicializar carrosséis
+            document.querySelectorAll('.carousel-container').forEach(container => {
+                const carouselId = container.getAttribute('data-carousel');
+                currentSlides[carouselId] = 0;
+            });
         });
+
+        let currentSlides = {};
+
+        function changeSlide(carouselId, direction) {
+            const container = document.querySelector(`[data-carousel="${carouselId}"]`);
+            const images = container.querySelectorAll('.carousel-image');
+            const indicators = container.querySelectorAll('.indicator');
+            
+            // Remove active class from current slide
+            images[currentSlides[carouselId]].classList.remove('active');
+            indicators[currentSlides[carouselId]].classList.remove('active');
+            
+            // Calculate new slide index
+            currentSlides[carouselId] += direction;
+            
+            if (currentSlides[carouselId] >= images.length) {
+                currentSlides[carouselId] = 0;
+            } else if (currentSlides[carouselId] < 0) {
+                currentSlides[carouselId] = images.length - 1;
+            }
+            
+            // Add active class to new slide
+            images[currentSlides[carouselId]].classList.add('active');
+            indicators[currentSlides[carouselId]].classList.add('active');
+        }
+
+        function goToSlide(carouselId, slideIndex) {
+            const container = document.querySelector(`[data-carousel="${carouselId}"]`);
+            const images = container.querySelectorAll('.carousel-image');
+            const indicators = container.querySelectorAll('.indicator');
+            
+            // Remove active class from current slide
+            images[currentSlides[carouselId]].classList.remove('active');
+            indicators[currentSlides[carouselId]].classList.remove('active');
+            
+            // Set new slide
+            currentSlides[carouselId] = slideIndex;
+            
+            // Add active class to new slide
+            images[currentSlides[carouselId]].classList.add('active');
+            indicators[currentSlides[carouselId]].classList.add('active');
+        }
+
+        // Auto-play carrossel (opcional)
+        setInterval(() => {
+            Object.keys(currentSlides).forEach(carouselId => {
+                changeSlide(parseInt(carouselId), 1);
+            });
+        }, 5000); // Muda a cada 5 segundos
     </script>
 </body>
 
