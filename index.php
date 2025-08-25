@@ -59,7 +59,10 @@
                             'img/KAWAZAKI.jpg',
                             'img/KAWAZAKI-2.jpg',
                             'img/KAWAZAKI-3.jpg',
-                            'img/KAWAZAKI-4.jpg'
+                            'img/KAWAZAKI-4.jpg',
+                            'img/KAWAZAKI-5.jpg',
+                            'img/KAWAZAKI-6.jpg',
+                            'img/KAWAZAKI-7.jpg'
                         ),
                         'nome' => 'KAWAZAKI NINJA 300 2015',
                         'preco' => 'R$ 19.500,00',

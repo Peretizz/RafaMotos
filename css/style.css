@@ -284,7 +284,6 @@ nav a:hover {
   opacity: 1;
 }
 
-/* Melhorando a responsividade do carrossel */
 @media (max-width: 768px) {
   .carousel-btn {
     width: 35px;
@@ -488,7 +487,6 @@ nav a:hover {
   font-weight: 500;
 }
 
-/* Destaques */
 .destaques {
   padding: 4rem 0;
   background: linear-gradient(135deg, var(--azul-escuro), var(--azul-principal));
@@ -515,7 +513,6 @@ nav a:hover {
   opacity: 0.9;
 }
 
-/* Footer */
 footer {
   background: var(--azul-escuro);
   color: var(--branco);
@@ -553,7 +550,6 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
