@@ -8,7 +8,7 @@
     <title>Rafa Motos </title>
 </head>
 
-<body> <!-- Header -->
+<body> 
     <header>
         <div class="container">
             <div class="header-content"> <a href="#" class="logo"><img src="img/logo.png" style="width: 100px;"></a>
@@ -23,7 +23,7 @@
             </div>
         </div>
     </header>
-    <!-- Hero Section -->
+    
     <section class="hero" id="inicio">
         <div class="container">
             <h1>Encontre a Moto dos Seus Sonhos</h1>
@@ -32,7 +32,6 @@
         </div>
     </section>
 
-    <!-- Sobre a Empresa -->
     <section class="sobre-empresa" id="sobre">
         <div class="container">
             <div class="sobre-content">
@@ -49,13 +48,11 @@
         </div>
     </section>
 
-    <!-- Produtos - Motos -->
     <section class="produtos" id="motos">
         <div class="container">
             <h2 class="section-title">Nossas Motos</h2>
             <div class="produtos-grid">
                 <?php
-                // Matriz com as informações das motos
                 $motos = array(
                     array(
                         'imagens' => array(
@@ -110,7 +107,6 @@
                     ),
                 );
 
-                // Loop através das motos para gerar os cards com carrossel
                 foreach ($motos as $index => $moto) {
                     $whatsapp_link = "https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20" . urlencode($moto['nome']);
                     echo '
@@ -167,7 +163,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="contato">
         <div class="container">
             <div class="footer-content">
@@ -201,9 +196,7 @@
     </footer>
 
     <script>
-        // JavaScript para interações
         document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scroll para links internos
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -217,7 +210,6 @@
                 });
             });
 
-            // Efeito de hover nos produtos
             const produtoCards = document.querySelectorAll('.produto-card');
             produtoCards.forEach(card => {
                 card.addEventListener('mouseenter', () => {
@@ -228,7 +220,6 @@
                 });
             });
 
-            // Inicializar carrosséis
             document.querySelectorAll('.carousel-container').forEach(container => {
                 const carouselId = container.getAttribute('data-carousel');
                 currentSlides[carouselId] = 0;
@@ -242,11 +233,9 @@
             const images = container.querySelectorAll('.carousel-image');
             const indicators = container.querySelectorAll('.indicator');
             
-            // Remove active class from current slide
             images[currentSlides[carouselId]].classList.remove('active');
             indicators[currentSlides[carouselId]].classList.remove('active');
             
-            // Calculate new slide index
             currentSlides[carouselId] += direction;
             
             if (currentSlides[carouselId] >= images.length) {
@@ -255,7 +244,6 @@
                 currentSlides[carouselId] = images.length - 1;
             }
             
-            // Add active class to new slide
             images[currentSlides[carouselId]].classList.add('active');
             indicators[currentSlides[carouselId]].classList.add('active');
         }
@@ -265,24 +253,20 @@
             const images = container.querySelectorAll('.carousel-image');
             const indicators = container.querySelectorAll('.indicator');
             
-            // Remove active class from current slide
             images[currentSlides[carouselId]].classList.remove('active');
             indicators[currentSlides[carouselId]].classList.remove('active');
             
-            // Set new slide
             currentSlides[carouselId] = slideIndex;
             
-            // Add active class to new slide
             images[currentSlides[carouselId]].classList.add('active');
             indicators[currentSlides[carouselId]].classList.add('active');
         }
 
-        // Auto-play carrossel (opcional)
         setInterval(() => {
             Object.keys(currentSlides).forEach(carouselId => {
                 changeSlide(parseInt(carouselId), 1);
             });
-        }, 5000); // Muda a cada 5 segundos
+        }, 5000); 
     </script>
 </body>
 
