@@ -114,8 +114,8 @@
                         ),
                         'nome' => 'HONDA XRE 190 2021',
                         'preco' => 'R$ 20.900,00',
-                        'kilometragem' => '39.200 km',
                         'especificacoes' => array(
+                            'Kilometragem' => '39.200 km',
                             'Cilindrada' => '184,4 cc',
                             'Potência' => '16,4 cv',
                             'Transmissão' => '5 marchas',
@@ -131,8 +131,8 @@
                         ),
                         'nome' => 'HONDA NXR 160 BROS 2025',
                         'preco' => 'R$ 24.900,00',
-                        'kilometragem' => '161 km',
                         'especificacoes' => array(
+                            'Kilometragem' => '161 km',
                             'Cilindrada' => '162,7 cc',
                             'Potência' => '14,2 cv ',
                             'Transmissão' => '5 marchas',
@@ -165,9 +165,9 @@
                         ),
                         'nome' => 'SUZUKI BANDIT 650 S 2011',
                         'preco' => 'R$ 28.900,00',
-                        'kilometragem' => '56.447 km',
                         'especificacoes' => array(
-                            'Cilindrada' => '656 cm³',
+                            'Kilometragem' => '56.447 km',
+                            'Cilindrada' => '656 cc',
                             'Potência' => '85 cv',
                             'Transmissão' => '6 marchas',
                             'Peso' => '240 kg'
@@ -182,9 +182,9 @@
                         ),
                         'nome' => 'HONDA CB 300F TWISTER 2025',
                         'preco' => 'R$ 28.900,00',
-                        'kilometragem' => '940 km',
                         'especificacoes' => array(
-                            'Cilindrada' => '293,5 cm³',
+                            'Kilometragem' => '940 km',
+                            'Cilindrada' => '293,5 cc',
                             'Potência' => '24,5 cv',
                             'Transmissão' => '6 marchas',
                             'Peso' => '151 kg'
@@ -198,9 +198,9 @@
                         ),
                         'nome' => 'HONDA XRE 300 ADVENTURE 2022',
                         'preco' => 'R$ 28.900,00',
-                        'kilometragem' => '38.015 km',
                         'especificacoes' => array(
-                            'Cilindrada' => '291,6 cm³',
+                            'Kilometragem' => '38.015 km',
+                            'Cilindrada' => '291,6 cc',
                             'Potência' => '25,6 cv',
                             'Transmissão' => '5 marchas',
                             'Peso' => '159 kg'
@@ -216,8 +216,8 @@
                         ),
                         'nome' => 'YAMAHA CROSSER 150 2022',
                         'preco' => 'R$ 18.300,00',
-                        'kilometragem' => '27.489 km',
                         'especificacoes' => array(
+                            'Kilometragem' => '27.489 km',
                             'Cilindrada' => '149,0 cc',
                             'Potência' => '12,2 cv',
                             'Transmissão' => '5 marchas',
@@ -232,9 +232,9 @@
                         ),
                         'nome' => 'HONDA CG 150 FAN ESi 2010',
                         'preco' => 'R$ 10.300,00',
-                        'kilometragem' => '35.268 km',
                         'especificacoes' => array(
-                            'Cilindrada' => '149,2 cm³',
+                            'Kilometragem' => '35.268 km',
+                            'Cilindrada' => '149,2 cc',
                             'Potência' => '14,3 cv',
                             'Transmissão' => '5 marchas',
                             'Peso' => '116,5 kg'
@@ -250,14 +250,47 @@
                         ),
                         'nome' => 'HONDA XRE 190 2019',
                         'preco' => 'R$ 18.300,00',
-                        'kilometragem' => '58.549 km',
                         'especificacoes' => array(
-                            'Cilindrada' => '184,4 cm³',
-                            'Potência' => '16,3 cv a 8.500 rpm (Gasolina) / 16,4 cv a 8.500 rpm (Etanol)',
+                            'Kilometragem' => '35.268 km',
+                            'Cilindrada' => '184,4 cc',
+                            'Potência' => '16,3 cv',
                             'Transmissão' => '5 marchas',
                             'Peso' => '127 kg'
                         )
+                    ),
+                    array(
+                        'imagens' => array(
+                            'img/LANDER250-2024.jpg',
+                            'img/LANDER250-2024-2.jpg',
+                            'img/LANDER250-2024-3.jpg'
+                        ),
+                        'nome' => 'YAMAHA XTZ 250 LANDER 2024',
+                        'preco' => 'R$ 28.900,00',
+                        'especificacoes' => array(
+                            'Kilometragem' => '12.334 km',
+                            'Cilindrada' => '249 cc',
+                            'Potência' => '20,9 cv',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '141 kg'
+                        )
+                    ),
+                    array(
+                        'imagens' => array(
+                            'img/BIZ125-2021.jpg',
+                            'img/BIZ125-2021-2.jpg',
+                            'img/BIZ125-2021-3.jpg',
+                            'img/BIZ125-2021-4.jpg'
+                        ),
+                        'nome' => 'HONDA BIZ 125 2021',
+                        'preco' => 'R$ 15.900,00',
+                        'especificacoes' => array(
+                            'Cilindrada' => '124,9 cm³',
+                            'Potência' => '11,2 cv',
+                            'Transmissão' => '4 marchas ',
+                            'Peso' => '108 kg'
+                        )
                     )
+
 
 
                 );
