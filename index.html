@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rafa Motos</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo"><img src="img/logo.png" style="width: 100px;"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#motos">Motos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Encontre a Moto dos Seus Sonhos</h1>
+            <p>As melhores motos com qualidade garantida e preços imbatíveis na Rafa Motos</p>
+            <a href="#motos" class="btn">Ver Motos</a>
+        </div>
+    </section>
+
+    <section class="sobre-empresa" id="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <h2>Sobre Nós</h2>
+                    <p>Há 2 anos no mercado, a Rafa Motos é referência em qualidade e confiança quando o assunto é motocicletas. Nossa missão é proporcionar aos clientes as melhores experiências sobre duas rodas, com produtos de alta qualidade e um atendimento personalizado.</p>
+                    <p>Contamos com uma equipe especializada e apaixonada por motos, pronta para oferecer o melhor aconselhamento na escolha da moto ideal para cada perfil de piloto. Trabalhamos apenas com as melhores marcas e modelos, garantindo procedência e satisfação total.</p>
+                    <p>Venha nos fazer uma visita e descubra por que somos a escolha certa para quem busca qualidade, confiança e preço justo no mundo das motos.</p>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="img/sobre.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="produtos" id="motos">
+        <div class="container">
+            <h2 class="section-title">Nossas Motos</h2>
+            <div class="produtos-grid">
+                
+                <!-- HONDA START 160 2022 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="0">
+                            <div class="carousel-track">
+                                <img src="img/START.jpg" class="carousel-image active" alt="HONDA START 160 2022" />
+                                <img src="img/START-2.jpg" class="carousel-image" alt="HONDA START 160 2022" />
+                                <img src="img/START-3.jpg" class="carousel-image" alt="HONDA START 160 2022" />
+                                <img src="img/START-4.jpg" class="carousel-image" alt="HONDA START 160 2022" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(0, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(0, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(0, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA START 160 2022</h3>
+                        <p class="produto-preco">R$ 15.900,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>57.000 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>162,7 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>14,9 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>115 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20START%20160%202022" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HONDA CB 250 2021 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="1">
+                            <div class="carousel-track">
+                                <img src="img/CB250.jpg" class="carousel-image active" alt="HONDA CB 250 2021" />
+                                <img src="img/CB250-2.jpg" class="carousel-image" alt="HONDA CB 250 2021" />
+                                <img src="img/CB250-3.jpg" class="carousel-image" alt="HONDA CB 250 2021" />
+                                <img src="img/CB250-4.jpg" class="carousel-image" alt="HONDA CB 250 2021" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(1, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(1, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(1, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(1, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(1, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(1, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA CB 250 2021</h3>
+                        <p class="produto-preco">R$ 21.900,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>37.250 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>249,5 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>22,6 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>6 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>137 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20CB%20250%202021" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HONDA FAN 160 2023 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="2">
+                            <div class="carousel-track">
+                                <img src="img/FAN160.jpg" class="carousel-image active" alt="HONDA FAN 160 2023" />
+                                <img src="img/FAN160-2.jpg" class="carousel-image" alt="HONDA FAN 160 2023" />
+                                <img src="img/FAN160-3.jpg" class="carousel-image" alt="HONDA FAN 160 2023" />
+                                <img src="img/FAN160-4.jpg" class="carousel-image" alt="HONDA FAN 160 2023" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(2, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(2, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(2, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(2, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(2, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(2, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA FAN 160 2023</h3>
+                        <p class="produto-preco">R$ 18.300,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>17.900 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>162,7 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>14,9 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>116 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20FAN%20160%202023" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HONDA XRE 190 2021 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="3">
+                            <div class="carousel-track">
+                                <img src="img/XRE190.jpg" class="carousel-image active" alt="HONDA XRE 190 2021" />
+                                <img src="img/XRE190-2.jpg" class="carousel-image" alt="HONDA XRE 190 2021" />
+                                <img src="img/XRE190-3.jpg" class="carousel-image" alt="HONDA XRE 190 2021" />
+                                <img src="img/XRE190-4.jpg" class="carousel-image" alt="HONDA XRE 190 2021" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(3, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(3, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(3, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(3, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(3, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(3, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA XRE 190 2021</h3>
+                        <p class="produto-preco">R$ 20.900,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>39.200 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>184,4 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>16,4 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>127 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20XRE%20190%202021" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HONDA NXR 160 BROS 2025 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="4">
+                            <div class="carousel-track">
+                                <img src="img/BROS160.jpg" class="carousel-image active" alt="HONDA NXR 160 BROS 2025" />
+                                <img src="img/BROS160-2.jpg" class="carousel-image" alt="HONDA NXR 160 BROS 2025" />
+                                <img src="img/BROS160-3.jpg" class="carousel-image" alt="HONDA NXR 160 BROS 2025" />
+                                <img src="img/BROS160-4.jpg" class="carousel-image" alt="HONDA NXR 160 BROS 2025" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(4, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(4, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(4, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(4, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(4, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(4, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA NXR 160 BROS 2025</h3>
+                        <p class="produto-preco">R$ 24.900,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>161 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>162,7 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>14,2 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>125 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20NXR%20160%20BROS%202025" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- YAMAHA FAZER 250 2017 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="5">
+                            <div class="carousel-track">
+                                <img src="img/FZ250-2017.jpg" class="carousel-image active" alt="YAMAHA FAZER 250 2017" />
+                                <img src="img/FZ250-2017-2.jpg" class="carousel-image" alt="YAMAHA FAZER 250 2017" />
+                                <img src="img/FZ250-2017-3.jpg" class="carousel-image" alt="YAMAHA FAZER 250 2017" />
+                                <img src="img/FZ250-2017-4.jpg" class="carousel-image" alt="YAMAHA FAZER 250 2017" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(5, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(5, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(5, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(5, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(5, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(5, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">YAMAHA FAZER 250 2017</h3>
+                        <p class="produto-preco">R$ 16.300,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>249,45 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>20,7 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>146 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20YAMAHA%20FAZER%20250%202017" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SUZUKI BANDIT 650 S 2011 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="6">
+                            <div class="carousel-track">
+                                <img src="img/BANDIT650S.jpg" class="carousel-image active" alt="SUZUKI BANDIT 650 S 2011" />
+                                <img src="img/BANDIT650S-2.jpg" class="carousel-image" alt="SUZUKI BANDIT 650 S 2011" />
+                                <img src="img/BANDIT650S-3.jpg" class="carousel-image" alt="SUZUKI BANDIT 650 S 2011" />
+                                <img src="img/BANDIT650S-4.jpg" class="carousel-image" alt="SUZUKI BANDIT 650 S 2011" />
+                                <img src="img/BANDIT650S-5.jpg" class="carousel-image" alt="SUZUKI BANDIT 650 S 2011" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(6, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(6, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(6, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(6, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(6, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(6, 3)"></span>
+                                <span class="indicator" onclick="goToSlide(6, 4)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">SUZUKI BANDIT 650 S 2011</h3>
+                        <p class="produto-preco">R$ 28.900,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>56.447 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>656 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>85 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>6 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>240 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20SUZUKI%20BANDIT%20650%20S%202011" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HONDA CB 300F TWISTER 2025 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="7">
+                            <div class="carousel-track">
+                                <img src="img/CB300F-2025.jpg" class="carousel-image active" alt="HONDA CB 300F TWISTER 2025" />
+                                <img src="img/CB300F-2025-2.jpg" class="carousel-image" alt="HONDA CB 300F TWISTER 2025" />
+                                <img src="img/CB300F-2025-3.jpg" class="carousel-image" alt="HONDA CB 300F TWISTER 2025" />
+                                <img src="img/CB300F-2025-4.jpg" class="carousel-image" alt="HONDA CB 300F TWISTER 2025" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(7, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(7, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(7, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(7, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(7, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(7, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA CB 300F TWISTER 2025</h3>
+                        <p class="produto-preco">R$ 28.900,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>940 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>293,5 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>24,5 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>6 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>151 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20CB%20300F%20TWISTER%202025" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HONDA XRE 300 ADVENTURE 2022 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="8">
+                            <div class="carousel-track">
+                                <img src="img/XRE300-2022.jpg" class="carousel-image active" alt="HONDA XRE 300 ADVENTURE 2022" />
+                                <img src="img/XRE300-2022-2.jpg" class="carousel-image" alt="HONDA XRE 300 ADVENTURE 2022" />
+                                <img src="img/XRE300-2022-3.jpg" class="carousel-image" alt="HONDA XRE 300 ADVENTURE 2022" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(8, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(8, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(8, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(8, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(8, 2)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA XRE 300 ADVENTURE 2022</h3>
+                        <p class="produto-preco">R$ 28.900,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>38.015 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>291,6 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>25,6 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>159 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20XRE%20300%20ADVENTURE%202022" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- YAMAHA CROSSER 150 2022 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="9">
+                            <div class="carousel-track">
+                                <img src="img/CROSSER150.jpg" class="carousel-image active" alt="YAMAHA CROSSER 150 2022" />
+                                <img src="img/CROSSER150-2.jpg" class="carousel-image" alt="YAMAHA CROSSER 150 2022" />
+                                <img src="img/CROSSER150-3.jpg" class="carousel-image" alt="YAMAHA CROSSER 150 2022" />
+                                <img src="img/CROSSER150-4.jpg" class="carousel-image" alt="YAMAHA CROSSER 150 2022" />
+                                <img src="img/CROSSER150-5.jpg" class="carousel-image" alt="YAMAHA CROSSER 150 2022" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(9, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(9, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(9, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(9, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(9, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(9, 3)"></span>
+                                <span class="indicator" onclick="goToSlide(9, 4)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">YAMAHA CROSSER 150 2022</h3>
+                        <p class="produto-preco">R$ 18.300,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>27.489 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>149,0 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>12,2 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>131 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20YAMAHA%20CROSSER%20150%202022" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HONDA CG 150 FAN ESi 2010 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="10">
+                            <div class="carousel-track">
+                                <img src="img/FAN150-2010.jpg" class="carousel-image active" alt="HONDA CG 150 FAN ESi 2010" />
+                                <img src="img/FAN150-2010-2.jpg" class="carousel-image" alt="HONDA CG 150 FAN ESi 2010" />
+                                <img src="img/FAN150-2010-3.jpg" class="carousel-image" alt="HONDA CG 150 FAN ESi 2010" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(10, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(10, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(10, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(10, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(10, 2)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA CG 150 FAN ESi 2010</h3>
+                        <p class="produto-preco">R$ 10.300,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>35.268 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>149,2 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>14,3 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>116,5 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20CG%20150%20FAN%20ESi%202010" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HONDA XRE 190 2019 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="11">
+                            <div class="carousel-track">
+                                <img src="img/XRE190-2019.jpg" class="carousel-image active" alt="HONDA XRE 190 2019" />
+                                <img src="img/XRE190-2019-2.jpg" class="carousel-image" alt="HONDA XRE 190 2019" />
+                                <img src="img/XRE190-2019-3.jpg" class="carousel-image" alt="HONDA XRE 190 2019" />
+                                <img src="img/XRE190-2019-4.jpg" class="carousel-image" alt="HONDA XRE 190 2019" />
+                                <img src="img/XRE190-2019-5.jpg" class="carousel-image" alt="HONDA XRE 190 2019" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(11, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(11, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(11, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(11, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(11, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(11, 3)"></span>
+                                <span class="indicator" onclick="goToSlide(11, 4)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA XRE 190 2019</h3>
+                        <p class="produto-preco">R$ 18.300,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>35.268 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>184,4 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>16,3 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>127 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20XRE%20190%202019" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- YAMAHA XTZ 250 LANDER 2024 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="12">
+                            <div class="carousel-track">
+                                <img src="img/LANDER250-2024.jpg" class="carousel-image active" alt="YAMAHA XTZ 250 LANDER 2024" />
+                                <img src="img/LANDER250-2024-2.jpg" class="carousel-image" alt="YAMAHA XTZ 250 LANDER 2024" />
+                                <img src="img/LANDER250-2024-3.jpg" class="carousel-image" alt="YAMAHA XTZ 250 LANDER 2024" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(12, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(12, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(12, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(12, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(12, 2)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">YAMAHA XTZ 250 LANDER 2024</h3>
+                        <p class="produto-preco">R$ 28.900,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Kilometragem:</span>
+                                <span>12.334 km</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>249 cc</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>20,9 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>5 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>141 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20YAMAHA%20XTZ%20250%20LANDER%202024" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HONDA BIZ 125 2021 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <div class="carousel-container" data-carousel="13">
+                            <div class="carousel-track">
+                                <img src="img/BIZ125-2021.jpg" class="carousel-image active" alt="HONDA BIZ 125 2021" />
+                                <img src="img/BIZ125-2021-2.jpg" class="carousel-image" alt="HONDA BIZ 125 2021" />
+                                <img src="img/BIZ125-2021-3.jpg" class="carousel-image" alt="HONDA BIZ 125 2021" />
+                                <img src="img/BIZ125-2021-4.jpg" class="carousel-image" alt="HONDA BIZ 125 2021" />
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(13, -1)">‹</button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(13, 1)">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(13, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(13, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(13, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(13, 3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-titulo">HONDA BIZ 125 2021</h3>
+                        <p class="produto-preco">R$ 15.900,00</p>
+                        <div class="produto-especificacoes">
+                            <div class="especificacao">
+                                <span>Cilindrada:</span>
+                                <span>124,9 cm³</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Potência:</span>
+                                <span>11,2 cv</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Transmissão:</span>
+                                <span>4 marchas</span>
+                            </div>
+                            <div class="especificacao">
+                                <span>Peso:</span>
+                                <span>108 kg</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/554998112215?text=Boa%20tarde,%20estou%20interessado%20na%20HONDA%20BIZ%20125%202021" class="btn btn-whatsapp" target="_blank">
+                            Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rafa Motos</h3>
+                    <p>Sua loja especializada em motos de qualidade.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Email: nickperetivendas@gmail.com</p>
+                    <p>Telefone: (49) 99811-2215</p>
+                    <p>Endereço: R. Bulcão Viana, 695 - Floresta, Videira - SC, 89560-051</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Segunda a Sexta: 8h às 12h 13:30h às 18:30h</p>
+                    <p>Sábado: 8h às 12h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Atendimento</h3>
+                    <a href="https://wa.me/554998112215" class="btn btn-whatsapp" target="_blank" style="margin-top: 10px;">
+                        WhatsApp Direto
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Rafa Motos - Todos os direitos reservados | Criado por Nicolas Pereti</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            const produtoCards = document.querySelectorAll('.produto-card');
+            produtoCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.boxShadow = '0 12px 35px rgba(0,0,0,0.2)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+                });
+            });
+
+            document.querySelectorAll('.carousel-container').forEach(container => {
+                const carouselId = container.getAttribute('data-carousel');
+                currentSlides[carouselId] = 0;
+            });
+        });
+
+        let currentSlides = {};
+
+        function changeSlide(carouselId, direction) {
+            const container = document.querySelector(`[data-carousel="${carouselId}"]`);
+            const images = container.querySelectorAll('.carousel-image');
+            const indicators = container.querySelectorAll('.indicator');
+
+            images[currentSlides[carouselId]].classList.remove('active');
+            indicators[currentSlides[carouselId]].classList.remove('active');
+
+            currentSlides[carouselId] += direction;
+
+            if (currentSlides[carouselId] >= images.length) {
+                currentSlides[carouselId] = 0;
+            } else if (currentSlides[carouselId] < 0) {
+                currentSlides[carouselId] = images.length - 1;
+            }
+
+            images[currentSlides[carouselId]].classList.add('active');
+            indicators[currentSlides[carouselId]].classList.add('active');
+        }
+
+        function goToSlide(carouselId, slideIndex) {
+            const container = document.querySelector(`[data-carousel="${carouselId}"]`);
+            const images = container.querySelectorAll('.carousel-image');
+            const indicators = container.querySelectorAll('.indicator');
+
+            images[currentSlides[carouselId]].classList.remove('active');
+            indicators[currentSlides[carouselId]].classList.remove('active');
+
+            currentSlides[carouselId] = slideIndex;
+
+            images[currentSlides[carouselId]].classList.add('active');
+            indicators[currentSlides[carouselId]].classList.add('active');
+        }
+
+        setInterval(() => {
+            Object.keys(currentSlides).forEach(carouselId => {
+                changeSlide(parseInt(carouselId), 1);
+            });
+        }, 5000);
+    </script>
+</body>
+
+</html>
