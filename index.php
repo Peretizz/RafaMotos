@@ -8,7 +8,7 @@
     <title>Rafa Motos </title>
 </head>
 
-<body> 
+<body>
     <header>
         <div class="container">
             <div class="header-content"> <a href="#" class="logo"><img src="img/logo.png" style="width: 100px;"></a>
@@ -23,7 +23,7 @@
             </div>
         </div>
     </header>
-    
+
     <section class="hero" id="inicio">
         <div class="container">
             <h1>Encontre a Moto dos Seus Sonhos</h1>
@@ -56,58 +56,94 @@
                 $motos = array(
                     array(
                         'imagens' => array(
-                            'img/KAWAZAKI.jpg',
-                            'img/KAWAZAKI-2.jpg',
-                            'img/KAWAZAKI-3.jpg',
-                            'img/KAWAZAKI-4.jpg',
-                            'img/KAWAZAKI-5.jpg',
-                            'img/KAWAZAKI-6.jpg',
-                            'img/KAWAZAKI-7.jpg'
+                            'img/START.jpg',
+                            'img/START-2.jpg',
+                            'img/START-3.jpg',
+                            'img/START-4.jpg'
                         ),
-                        'nome' => 'KAWAZAKI NINJA 300 2015',
-                        'preco' => 'R$ 19.500,00',
+                        'nome' => 'HONDA START 160 2022',
+                        'preco' => 'R$ 15.900,00',
                         'especificacoes' => array(
-                            'Kilometragem' => '17.000 km',
-                            'Cilindrada' => '296 cc',
-                            'Potência' => '39 cv',
-                            'Transmissão' => '6 marchas',
-                            'Peso' => '172 kg'
+                            'Kilometragem' => '57.000 km',
+                            'Cilindrada' => '162,7 cc',
+                            'Potência' => '14,9 cv',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '115 kg'
                         )
                     ),
                     array(
                         'imagens' => array(
-                            'img/HONDA-CBR.jpg',
-                            'img/HONDA-CBR-2.jpg',
-                            'img/HONDA-CBR-3.jpg'
+                            'img/CB250.jpg',
+                            'img/CB250-2.jpg',
+                            'img/CB250-3.jpg',
+                            'img/CB250-4.jpg'
                         ),
-                        'nome' => 'HONDA CBR 600RR 2018',
-                        'preco' => 'R$ 32.900,00',
+                        'nome' => 'HONDA CB 250 2021',
+                        'preco' => 'R$ 21.900,00',
                         'especificacoes' => array(
-                            'Kilometragem' => '12.500 km',
-                            'Cilindrada' => '599 cc',
-                            'Potência' => '118 cv',
+                            'Kilometragem' => '37.250 km',
+                            'Cilindrada' => '249,5 cc',
+                            'Potência' => '22,6 cv',
                             'Transmissão' => '6 marchas',
-                            'Peso' => '194 kg'
+                            'Peso' => '137 kg'
                         )
                     ),
                     array(
                         'imagens' => array(
-                            'img/YAMAHA-R3.jpg',
-                            'img/YAMAHA-R3-2.jpg',
-                            'img/YAMAHA-R3-3.jpg',
-                            'img/YAMAHA-R3-4.jpg',
-                            'img/YAMAHA-R3-5.jpg'
+                            'img/FAN160.jpg',
+                            'img/FAN160-2.jpg',
+                            'img/FAN160-3.jpg',
+                            'img/FAN160-4.jpg',
+                            'img/FAN160-5.jpg'
                         ),
-                        'nome' => 'YAMAHA YZF-R3 2020',
-                        'preco' => 'R$ 24.800,00',
+                        'nome' => 'HONDA FAN 160 2023 ',
+                        'preco' => 'R$ 18.300,00',
                         'especificacoes' => array(
-                            'Kilometragem' => '8.200 km',
-                            'Cilindrada' => '321 cc',
-                            'Potência' => '42 cv',
-                            'Transmissão' => '6 marchas',
-                            'Peso' => '169 kg'
+                            'Kilometragem' => '17.900 km',
+                            'Cilindrada' => '162,7 cc',
+                            'Potência' => '14,9 cv',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '116 kg'
                         )
                     ),
+                    array(
+                        'imagens' => array(
+                            'img/XRE190.jpg',
+                            'img/XRE190-2.jpg',
+                            'img/XRE190-3.jpg',
+                            'img/XRE190-4.jpg',
+                            'img/XRE190-5.jpg'
+                        ),
+                        'nome' => 'HONDA XRE 190 2021',
+                        'preco' => 'R$ 20.900,00',
+                        'kilometragem' => '39.200 km',
+                        'especificacoes' => array(
+                            'Cilindrada' => '184,4 cc',
+                            'Potência' => '16,4 cv',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '127 kg'
+                        )
+                    ),
+                    array(
+                        'imagens' => array(
+                            'img/BROS160.jpg',
+                            'img/BROS160-2.jpg',
+                            'img/BROS160-3.jpg',
+                            'img/BROS160-4.jpg',
+                            'img/BROS160-5.jpg'
+                        ),
+                        'nome' => 'HONDA NXR 160 BROS 2025',
+                        'preco' => 'R$ 24.900,00',
+                        'kilometragem' => '161 km',
+                        'especificacoes' => array(
+                            'Cilindrada' => '162,7 cc',
+                            'Potência' => '14,2 cv (Gasolina) / 14,3 cv (Etanol)',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '125 kg'
+                        )
+                    ),
+
+
                 );
 
                 foreach ($motos as $index => $moto) {
@@ -117,23 +153,23 @@
                     <div class="produto-image">
                         <div class="carousel-container" data-carousel="' . $index . '">
                             <div class="carousel-track">';
-                    
+
                     foreach ($moto['imagens'] as $imgIndex => $imagem) {
                         $activeClass = $imgIndex === 0 ? ' active' : '';
                         echo '<img src="' . $imagem . '" class="carousel-image' . $activeClass . '" alt="' . $moto['nome'] . '" />';
                     }
-                    
+
                     echo '
                             </div>
                             <button class="carousel-btn carousel-prev" onclick="changeSlide(' . $index . ', -1)">‹</button>
                             <button class="carousel-btn carousel-next" onclick="changeSlide(' . $index . ', 1)">›</button>
                             <div class="carousel-indicators">';
-                    
+
                     foreach ($moto['imagens'] as $imgIndex => $imagem) {
                         $activeClass = $imgIndex === 0 ? ' active' : '';
                         echo '<span class="indicator' . $activeClass . '" onclick="goToSlide(' . $index . ', ' . $imgIndex . ')"></span>';
                     }
-                    
+
                     echo '
                             </div>
                         </div>
@@ -235,18 +271,18 @@
             const container = document.querySelector(`[data-carousel="${carouselId}"]`);
             const images = container.querySelectorAll('.carousel-image');
             const indicators = container.querySelectorAll('.indicator');
-            
+
             images[currentSlides[carouselId]].classList.remove('active');
             indicators[currentSlides[carouselId]].classList.remove('active');
-            
+
             currentSlides[carouselId] += direction;
-            
+
             if (currentSlides[carouselId] >= images.length) {
                 currentSlides[carouselId] = 0;
             } else if (currentSlides[carouselId] < 0) {
                 currentSlides[carouselId] = images.length - 1;
             }
-            
+
             images[currentSlides[carouselId]].classList.add('active');
             indicators[currentSlides[carouselId]].classList.add('active');
         }
@@ -255,12 +291,12 @@
             const container = document.querySelector(`[data-carousel="${carouselId}"]`);
             const images = container.querySelectorAll('.carousel-image');
             const indicators = container.querySelectorAll('.indicator');
-            
+
             images[currentSlides[carouselId]].classList.remove('active');
             indicators[currentSlides[carouselId]].classList.remove('active');
-            
+
             currentSlides[carouselId] = slideIndex;
-            
+
             images[currentSlides[carouselId]].classList.add('active');
             indicators[currentSlides[carouselId]].classList.add('active');
         }
@@ -269,7 +305,7 @@
             Object.keys(currentSlides).forEach(carouselId => {
                 changeSlide(parseInt(carouselId), 1);
             });
-        }, 5000); 
+        }, 5000);
     </script>
 </body>
 
