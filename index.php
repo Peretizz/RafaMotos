@@ -93,8 +93,7 @@
                             'img/FAN160.jpg',
                             'img/FAN160-2.jpg',
                             'img/FAN160-3.jpg',
-                            'img/FAN160-4.jpg',
-                            'img/FAN160-5.jpg'
+                            'img/FAN160-4.jpg'
                         ),
                         'nome' => 'HONDA FAN 160 2023 ',
                         'preco' => 'R$ 18.300,00',
@@ -111,8 +110,7 @@
                             'img/XRE190.jpg',
                             'img/XRE190-2.jpg',
                             'img/XRE190-3.jpg',
-                            'img/XRE190-4.jpg',
-                            'img/XRE190-5.jpg'
+                            'img/XRE190-4.jpg'
                         ),
                         'nome' => 'HONDA XRE 190 2021',
                         'preco' => 'R$ 20.900,00',
@@ -129,19 +127,137 @@
                             'img/BROS160.jpg',
                             'img/BROS160-2.jpg',
                             'img/BROS160-3.jpg',
-                            'img/BROS160-4.jpg',
-                            'img/BROS160-5.jpg'
+                            'img/BROS160-4.jpg'
                         ),
                         'nome' => 'HONDA NXR 160 BROS 2025',
                         'preco' => 'R$ 24.900,00',
                         'kilometragem' => '161 km',
                         'especificacoes' => array(
                             'Cilindrada' => '162,7 cc',
-                            'Potência' => '14,2 cv (Gasolina) / 14,3 cv (Etanol)',
+                            'Potência' => '14,2 cv ',
                             'Transmissão' => '5 marchas',
                             'Peso' => '125 kg'
                         )
                     ),
+                    array(
+                        'imagens' => array(
+                            'img/FZ250-2017.jpg',
+                            'img/FZ250-2017-2.jpg',
+                            'img/FZ250-2017-3.jpg',
+                            'img/FZ250-2017-4.jpg'
+                        ),
+                        'nome' => 'YAMAHA FAZER 250 2017',
+                        'preco' => 'R$ 16.300,00',
+                        'especificacoes' => array(
+                            'Cilindrada' => '249,45 cc',
+                            'Potência' => '20,7 cv',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '146 kg',
+                        )
+                    ),
+                    array(
+                        'imagens' => array(
+                            'img/BANDIT650S.jpg',
+                            'img/BANDIT650S-2.jpg',
+                            'img/BANDIT650S-3.jpg',
+                            'img/BANDIT650S-4.jpg',
+                            'img/BANDIT650S-5.jpg'
+                        ),
+                        'nome' => 'SUZUKI BANDIT 650 S 2011',
+                        'preco' => 'R$ 28.900,00',
+                        'kilometragem' => '56.447 km',
+                        'especificacoes' => array(
+                            'Cilindrada' => '656 cm³',
+                            'Potência' => '85 cv',
+                            'Transmissão' => '6 marchas',
+                            'Peso' => '240 kg'
+                        )
+                    ),
+                    array(
+                        'imagens' => array(
+                            'img/CB300F-2025.jpg',
+                            'img/CB300F-2025-2.jpg',
+                            'img/CB300F-2025-3.jpg',
+                            'img/CB300F-2025-4.jpg'
+                        ),
+                        'nome' => 'HONDA CB 300F TWISTER 2025',
+                        'preco' => 'R$ 28.900,00',
+                        'kilometragem' => '940 km',
+                        'especificacoes' => array(
+                            'Cilindrada' => '293,5 cm³',
+                            'Potência' => '24,5 cv',
+                            'Transmissão' => '6 marchas',
+                            'Peso' => '151 kg'
+                        )
+                    ),
+                    array(
+                        'imagens' => array(
+                            'img/XRE300-2022.jpg',
+                            'img/XRE300-2022-2.jpg',
+                            'img/XRE300-2022-3.jpg'
+                        ),
+                        'nome' => 'HONDA XRE 300 ADVENTURE 2022',
+                        'preco' => 'R$ 28.900,00',
+                        'kilometragem' => '38.015 km',
+                        'especificacoes' => array(
+                            'Cilindrada' => '291,6 cm³',
+                            'Potência' => '25,6 cv',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '159 kg'
+                        )
+                    ),
+                    array(
+                        'imagens' => array(
+                            'img/CROSSER150.jpg',
+                            'img/CROSSER150-2.jpg',
+                            'img/CROSSER150-3.jpg',
+                            'img/CROSSER150-4.jpg',
+                            'img/CROSSER150-5.jpg'
+                        ),
+                        'nome' => 'YAMAHA CROSSER 150 2022',
+                        'preco' => 'R$ 18.300,00',
+                        'kilometragem' => '27.489 km',
+                        'especificacoes' => array(
+                            'Cilindrada' => '149,0 cc',
+                            'Potência' => '12,2 cv',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '131 kg'
+                        )
+                    ),
+                    array(
+                        'imagens' => array(
+                            'img/FAN150-2010.jpg',
+                            'img/FAN150-2010-2.jpg',
+                            'img/FAN150-2010-3.jpg'
+                        ),
+                        'nome' => 'HONDA CG 150 FAN ESi 2010',
+                        'preco' => 'R$ 10.300,00',
+                        'kilometragem' => '35.268 km',
+                        'especificacoes' => array(
+                            'Cilindrada' => '149,2 cm³',
+                            'Potência' => '14,3 cv',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '116,5 kg'
+                        )
+                    ),
+                    array(
+                        'imagens' => array(
+                            'img/XRE190-2019.jpg',
+                            'img/XRE190-2019-2.jpg',
+                            'img/XRE190-2019-3.jpg',
+                            'img/XRE190-2019-4.jpg',
+                            'img/XRE190-2019-5.jpg'
+                        ),
+                        'nome' => 'HONDA XRE 190 2019',
+                        'preco' => 'R$ 18.300,00',
+                        'kilometragem' => '58.549 km',
+                        'especificacoes' => array(
+                            'Cilindrada' => '184,4 cm³',
+                            'Potência' => '16,3 cv a 8.500 rpm (Gasolina) / 16,4 cv a 8.500 rpm (Etanol)',
+                            'Transmissão' => '5 marchas',
+                            'Peso' => '127 kg'
+                        )
+                    )
 
 
                 );
