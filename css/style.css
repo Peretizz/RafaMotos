@@ -34,7 +34,12 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  height: 80px;
+  transition: all 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
 }
 
 nav ul {
@@ -59,7 +64,6 @@ nav a:hover {
   color: white;
   text-align: center;
   padding: 100px 0 80px;
-
 }
 
 .hero h1 {
@@ -165,7 +169,6 @@ nav a:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
-
 
 .produto-image {
   position: relative;
@@ -336,7 +339,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   body {
     padding-top: 0;
   }
@@ -398,6 +400,6 @@ footer {
   }
 
   .logo img {
-    height: 70px;
+    height: 55px;
   }
 }
