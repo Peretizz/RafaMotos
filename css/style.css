@@ -60,7 +60,8 @@ nav a:hover {
   background: linear-gradient(135deg, #2c5aa0, #1e3a8a);
   color: white;
   text-align: center;
-  padding: 150px 0 100px;
+  padding: 100px 0 80px;
+  margin-top: 80px;
   /* removendo margin-top que estava causando problemas no mobile */
 }
 
@@ -349,8 +350,8 @@ footer {
 
   .hero {
     /* ajustando padding do hero para mobile */
-    padding: 20px 0 60px;
-    margin-top: 0;
+    margin-top: 90px;
+    padding: 40px 0 60px;
   }
 
   .sobre-content {
@@ -377,10 +378,14 @@ footer {
     /* ajustando altura para mobile */
     height: 250px;
   }
+
+  .logo img {
+    height: 60px;
+  }
 }
 
 @media (max-width: 480px) {
-  /* reduzindo padding-top para telas menores */
+  /* reduzindo padding-top do body para telas menores */
   body {
     padding-top: 75px;
   }
@@ -390,7 +395,9 @@ footer {
   }
 
   .hero {
-    padding: 10px 0 40px;
+    /* ajustando padding do hero para telas menores */
+    margin-top: 100px;
+    padding: 30px 0 50px;
   }
 
   .produtos-grid {
@@ -400,5 +407,9 @@ footer {
   .produto-image {
     /* ajustando altura para telas pequenas */
     height: 220px;
+  }
+
+  .logo img {
+    height: 70px;
   }
 }
