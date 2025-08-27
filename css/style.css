@@ -61,7 +61,6 @@ nav a:hover {
   color: white;
   text-align: center;
   padding: 100px 0 80px;
-  margin-top: 80px;
   /* removendo margin-top que estava causando problemas no mobile */
 }
 
@@ -343,14 +342,14 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  /* reduzindo padding-top do body para mobile */
+  /* removendo padding-top do body que estava causando problemas */
   body {
-    padding-top: 70px;
+    padding-top: 0;
   }
 
   .hero {
-    /* ajustando padding do hero para mobile */
-    margin-top: 90px;
+    /* aumentando margin-top para compensar o header fixo no mobile */
+    margin-top: 120px;
     padding: 40px 0 60px;
   }
 
@@ -380,24 +379,25 @@ footer {
   }
 
   .logo img {
+    /* aumentando tamanho da logo no mobile para não ficar achatada */
     height: 60px;
   }
 }
 
 @media (max-width: 480px) {
-  /* reduzindo padding-top do body para telas menores */
+  /* removendo padding-top do body que estava causando problemas */
   body {
-    padding-top: 75px;
+    padding-top: 0;
+  }
+
+  .hero {
+    /* aumentando ainda mais o margin-top para telas pequenas */
+    margin-top: 140px;
+    padding: 30px 0 50px;
   }
 
   .container {
     padding: 0 15px;
-  }
-
-  .hero {
-    /* ajustando padding do hero para telas menores */
-    margin-top: 100px;
-    padding: 30px 0 50px;
   }
 
   .produtos-grid {
@@ -410,6 +410,7 @@ footer {
   }
 
   .logo img {
-    height: 90px;
+    /* aumentando mais o tamanho da logo para telas pequenas */
+    height: 70px;
   }
 }
