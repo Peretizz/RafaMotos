@@ -337,6 +337,14 @@ footer {
   border-top: 1px solid #374151;
   color: #9ca3af;
 }
+
+/* Ajuste para alinhar logo + botão */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 /* Botão Hamburguer */
 .menu-toggle {
   display: none;
