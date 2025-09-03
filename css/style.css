@@ -345,7 +345,6 @@ footer {
   color: white;
 }
 
-
 @media (max-width: 768px) {
    nav ul {
     display: none; /* Esconde menu por padrão */
