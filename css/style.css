@@ -357,12 +357,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-    nav ul {
-    display: none; /* Esconde menu por padrão */
+  nav ul {
+    display: none;
+    /* Esconde menu por padrão */
     flex-direction: column;
     background: #1e3a8a;
     position: absolute;
-    top: 100px; /* abaixo do header */
+    top: 100px;
+    /* abaixo do header */
     right: 0;
     width: 200px;
     padding: 1rem;
@@ -370,33 +372,34 @@ footer {
   }
 
   nav ul.active {
-    display: flex; /* Mostra quando ativado */
+    display: flex;
+    /* Mostra quando ativado */
   }
 
   .menu-toggle {
-    display: block; /* Mostra o botão */
+    display: block;
+    /* Mostra o botão */
   }
 
   /* --- ALTERAÇÃO AQUI --- */
   .header-content {
-    flex-direction: row; /* mantém lado a lado */
-    justify-content: space-between; /* logo na esquerda, botão na direita */
+    flex-direction: row;
+    /* mantém lado a lado */
+    justify-content: space-between;
+    /* logo na esquerda, botão na direita */
     align-items: center;
-    gap: 0; /* remove espaço extra */
+    gap: 0;
+    /* remove espaço extra */
   }
 
   .hero {
-    padding: 40px 0 60px;
-    margin-top: 0; 
+    margin-top: 80px;
+    /* altura do header no mobile */
   }
 
   body {
-    padding-top: 80px; /* altura do header no mobile */
-  }
-
-  .hero {
-    margin-top: 120px;
-    padding: 40px 0 60px;
+    padding-top: 0;
+    /* sem padding extra */
   }
 
   .sobre-content {
@@ -434,8 +437,7 @@ footer {
   }
 
   .hero {
-    margin-top: 140px;
-    padding: 30px 0 50px;
+    margin-top: 70px; /* altura menor no celular */
   }
 
   .container {
@@ -459,31 +461,39 @@ footer {
 @media (max-width: 768px) {
   header .header-content {
     display: flex !important;
-    flex-direction: row !important;   /* lado a lado */
-    justify-content: space-between;    /* extremos */
+    flex-direction: row !important;
+    /* lado a lado */
+    justify-content: space-between;
+    /* extremos */
     align-items: center;
     gap: 0;
     flex-wrap: nowrap;
     width: 100%;
   }
 
-  header .logo { 
-    flex: 0 0 auto; 
+  header .logo {
+    flex: 0 0 auto;
   }
 
   header .menu-toggle {
     display: block !important;
     flex: 0 0 auto;
-    margin-left: auto;                 /* empurra para a direita */
+    margin-left: auto;
+    /* empurra para a direita */
   }
 
   /* Deixe o nav posicionado, mas sem ocupar espaço quando o UL estiver oculto */
-  header nav { position: relative; }
+  header nav {
+    position: relative;
+  }
+
   header nav ul {
-    display: none;                     /* escondido por padrão no mobile */
+    display: none;
+    /* escondido por padrão no mobile */
     position: absolute;
     right: 0;
-    top: 100%;                         /* aparece logo abaixo do header/nav */
+    top: 100%;
+    /* aparece logo abaixo do header/nav */
     width: 200px;
     padding: 1rem;
     border-radius: 0 0 8px 8px;
@@ -492,9 +502,12 @@ footer {
     gap: 1rem;
   }
 
-  header nav ul.active { display: flex; }
+  header nav ul.active {
+    display: flex;
+  }
 
   /* Ajuste opcional da logo no mobile */
-  header .logo img { height: 70px; }
+  header .logo img {
+    height: 70px;
+  }
 }
-
