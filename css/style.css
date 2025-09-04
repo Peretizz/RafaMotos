@@ -338,11 +338,10 @@ footer {
   color: #9ca3af;
 }
 
-/* Ajuste para alinhar logo + botão */
-.header-left {
+.header-content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
 }
 
 /* Botão Hamburguer */
