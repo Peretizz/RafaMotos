@@ -64,7 +64,10 @@ nav a:hover {
 }
 
 .hero {
-  background: linear-gradient(135deg, #2c5aa0, #1e3a8a);
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), /* overlay escuro */
+    url('../img/fundo.jpg') no-repeat center center;   /* sua imagem */
+  background-size: cover;  /* cobre toda a área */
   color: white;
   text-align: center;
   padding: 100px 0 80px;
