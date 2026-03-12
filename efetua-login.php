@@ -13,7 +13,7 @@ if (isset($_POST['idusuario']) && isset($_POST['senha'])) {
         $_SESSION['usuario_id'] = $usuario['idusuario'];
         $_SESSION['logado'] = true;
 
-        header("Location: painel.php");
+        header("Location: index.php");
         exit();
     } else {
         header("Location: login.php?erro=1");
