@@ -71,18 +71,20 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
 
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo"><img src="img/logo.png" alt="Rafa Motos"></div>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="index.php">Início</a></li>
-                        <li><a href="painel.php">Painel Admin</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo"><img src="img/logo.png" alt="Rafa Motos"></div>
+            
+            <div class="menu-toggle" id="mobile-menu">☰</div>
+
+            <nav id="nav">
+                <ul id="nav-list">
+                    <li><a href="index.php">Início</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
     <section class="cadastro-section">
         <div class="container">
