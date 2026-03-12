@@ -67,7 +67,7 @@ $motos = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="container">
             <h2 class="section-title">Nossas Motos</h2>
             <div class="produtos-grid">
-                <?php foreach ($motos as $moto): 
+                <?php foreach ($motos as $moto):
                     $idM = $moto['idmoto'];
                     $stmtFoto = $conexao->prepare("SELECT caminho_foto FROM fotos_motos WHERE idmoto = ?");
                     $stmtFoto->execute([$idM]);
@@ -93,16 +93,18 @@ $motos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <h3 class="produto-titulo"><?php echo $moto['titulo']; ?></h3>
                             <p class="produto-preco">R$ <?php echo number_format($moto['preco'], 2, ',', '.'); ?></p>
                             <div class="produto-especificacoes">
-                                <div class="especificacao"><span>KM:</span><span><?php echo $moto['km']; ?></span></div>
+                                <div class="especificacao"><span>Kilometragem:</span><span><?php echo $moto['km']; ?></span></div>
                                 <div class="especificacao"><span>Cilindrada:</span><span><?php echo $moto['cilindrada']; ?></span></div>
+                                <div class="especificacao"><span>Potência:</span><span><?php echo $moto['potencia']; ?></span></div>
+                                <div class="especificacao"><span>Transmissão:</span><span><?php echo $moto['transmissao']; ?></span></div>
                             </div>
                             <a href="https://wa.me/554998112215?text=Olá,%20interesse%20na%20<?php echo urlencode($moto['titulo']); ?>"
                                 class="btn btn-whatsapp" target="_blank">WhatsApp</a>
-                            
+
                             <?php if (isset($_SESSION['logado'])): ?>
-                                <a href="src/MotoDAO.php?acao=excluir&id=<?php echo $idM; ?>" 
-                                   style="background: #000; color: #fff; display: block; text-align: center; padding: 10px; margin-top: 10px; border-radius: 5px;"
-                                   onclick="return confirm('Excluir?')">🗑️ Excluir</a>
+                                <a href="src/MotoDAO.php?acao=excluir&id=<?php echo $idM; ?>"
+                                    style="background: #000; color: #fff; display: block; text-align: center; padding: 10px; margin-top: 10px; border-radius: 5px;"
+                                    onclick="return confirm('Excluir?')">🗑️ Excluir</a>
                             <?php endif; ?>
                         </div>
                     </div>
@@ -151,10 +153,11 @@ $motos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             currentSlides[id] = (currentSlides[id] + dir + images.length) % images.length;
             images[currentSlides[id]].classList.add('active');
         }
-        
+
         const menuToggle = document.getElementById('menu-toggle');
         const nav = document.querySelector('#nav ul');
         menuToggle.addEventListener('click', () => nav.classList.toggle('active'));
     </script>
 </body>
+
 </html>
