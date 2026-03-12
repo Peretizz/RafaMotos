@@ -122,7 +122,7 @@ $motos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </div>
                 <div class="footer-section">
                     <h3>Contato</h3>
-                    <p>Email: rafamotosvendas@gmail.com</p>
+                    <p>Email: nickperetivendas@gmail.com</p>
                     <p>Telefone: (49) 99811-2215</p>
                     <p>Endereço: R. Bulcão Viana, 695 - Videira - SC</p>
                 </div>
