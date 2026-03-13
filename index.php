@@ -3,7 +3,6 @@ session_start();
 require_once "src/ConexaoBD.php";
 $conexao = ConexaoBD::conectar();
 
-// Busca as motos cadastradas no banco
 $sql = "SELECT * FROM motos ORDER BY idmoto DESC";
 $stmt = $conexao->query($sql);
 $motos = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -31,7 +30,7 @@ $motos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <li><a href="#motos">Motos</a></li>
                         <li><a href="#contato">Contato</a></li>
                         <?php if (isset($_SESSION['logado'])): ?>
-                            <li><a href="cadastro_moto.php">Cadastrar</a></li>
+                            <li><a href="form-cadastro-moto.php">Cadastrar</a></li>
                             <li><a href="logout.php" style="color: #ff4d4d;">Sair</a></li>
                         <?php endif; ?>
                     </ul>
