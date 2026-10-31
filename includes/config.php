@@ -17,7 +17,7 @@ const LOJA_INSTAGRAM  = '';                      // ex.: 'https://instagram.com/
 // Simulador de parcelas (aparece nos detalhes de cada moto).
 // A taxa é só uma estimativa — ajuste para a realidade dos bancos com que você trabalha.
 const SIMULADOR_ATIVO = true;
-const SIMULADOR_TAXA_MENSAL = 0.0249;            // 2,49% ao mês
+const SIMULADOR_TAXA_MENSAL = 0.033;            // 2,49% ao mês
 const SIMULADOR_PRAZOS = [12, 24, 36, 48];
 
 // Fotos

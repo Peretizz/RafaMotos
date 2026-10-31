@@ -309,7 +309,7 @@ $ico_zap = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20
                     </label>
                     <label>Prazo
                         <select id="sim-prazo">
-                            <?php foreach (SIMULADOR_PRAZOS as $p): ?><option value="<?= $p ?>"<?= $p === 36 ? ' selected' : '' ?>><?= $p ?>x</option><?php endforeach; ?>
+                            <?php foreach (SIMULADOR_PRAZOS as $p): ?><option value="<?= $p ?>"<?= $p === 48 ? ' selected' : '' ?>><?= $p ?>x</option><?php endforeach; ?>
                         </select>
                     </label>
                     <p class="sim__res" id="sim-res" aria-live="polite"></p>
